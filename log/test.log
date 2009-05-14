@@ -1,0 +1,2237 @@
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-14 11:14:26) [GET]
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:26:36) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.4ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:26:36) [GET]
+  Parameters: {"id"=>"id"}
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:27:06) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:27:06) [GET]
+  Parameters: {"id"=>"id"}
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:28:17) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:28:17) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:28:38) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 38ms (View: 31, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:28:38) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.4ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:28:39) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:29:01) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:29:01) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.4ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:29:01) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:29:42) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:29:42) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (1.0ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:29:42', 'Fulano de Tal', '2009-05-14 14:29:42')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 43ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:29:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:29:43) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:29:43) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:31:26) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:31:26) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:31:26', 'Fulano de Tal', '2009-05-14 14:31:26')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:31:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:31:26) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.4ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:31:26) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:31:53) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:31:53) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:31:53', 'Fulano de Tal', '2009-05-14 14:31:53')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:31:53) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:31:54) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.5ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:31:54) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:36:35) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:36:35) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:36:35', 'Fulano de Tal', '2009-05-14 14:36:35')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 19ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:36:35) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:36:35) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.3ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:36:35) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:38:01) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:38:01) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:38:01', 'Fulano de Tal', '2009-05-14 14:38:01')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:38:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:38:01) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.3ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:38:01) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:39:01) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:39:01) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:39:01', 'Fulano de Tal', '2009-05-14 14:39:01')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 18ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:39:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:39:01) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.4ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:39:01) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:42:36) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 24ms (View: 16, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:42:36) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:42:36', 'Fulano de Tal', '2009-05-14 14:42:36')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 41ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:42:36) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:42:36', 'Fulano', '2009-05-14 14:42:36')[0m
+  [4;36;1mPessoa Create (0.2ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:42:36', 'Fulano', '2009-05-14 14:42:36')[0m
+  [4;35;1mPessoa Create (0.2ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:42:36', 'Fulano', '2009-05-14 14:42:36')[0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:42:37) [GET]
+  Parameters: {"id"=>"id"}
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:42:37) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:43:40) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 26ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:43:40) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:43:40', 'Fulano de Tal', '2009-05-14 14:43:40')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:43:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (1.0ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:43:41', 'Fulano', '2009-05-14 14:43:41')[0m
+  [4;36;1mPessoa Create (0.8ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:43:41', 'Fulano', '2009-05-14 14:43:41')[0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:43:41', 'Fulano', '2009-05-14 14:43:41')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 11:43:41) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 10ms (View: 7, DB: 4) | 200 OK [http://www.example.com/pessoas]
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:43:41) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.4ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:43:41) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:58:12) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 24ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:58:12) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:58:12', 'Fulano de Tal', '2009-05-14 14:58:12')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 18ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:58:12) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:58:12', 'Fulano', '2009-05-14 14:58:12')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:58:12', 'Fulano', '2009-05-14 14:58:12')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:58:12', 'Fulano', '2009-05-14 14:58:12')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 11:58:12) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:58:12) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:58:12) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:58:41) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:58:41) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:58:41', 'Fulano de Tal', '2009-05-14 14:58:41')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:58:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:58:41', 'Fulano', '2009-05-14 14:58:41')[0m
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:58:41', 'Fulano', '2009-05-14 14:58:41')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:58:41', 'Fulano', '2009-05-14 14:58:41')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 11:58:41) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 3) | 200 OK [http://www.example.com/pessoas]
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:58:41) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.4ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:58:41) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 11:59:48) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 11:59:48) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 14:59:48', 'Fulano de Tal', '2009-05-14 14:59:48')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:59:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:59:48', 'Fulano', '2009-05-14 14:59:48')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:59:48', 'Fulano', '2009-05-14 14:59:48')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 14:59:48', 'Fulano', '2009-05-14 14:59:48')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 11:59:48) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 12ms (View: 9, DB: 2) | 200 OK [http://www.example.com/pessoas]
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 11:59:48) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 11:59:48) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:01:06) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:01:06) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:01:06', 'Fulano de Tal', '2009-05-14 15:01:06')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:01:06) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.8ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:01:07', 'Fulano', '2009-05-14 15:01:07')[0m
+  [4;36;1mPessoa Create (0.4ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:01:07', 'Fulano', '2009-05-14 15:01:07')[0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:01:07', 'Fulano', '2009-05-14 15:01:07')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:01:07) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 10ms (View: 7, DB: 3) | 200 OK [http://www.example.com/pessoas]
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:01:07) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.4ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:01:07) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:01:54) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 28ms (View: 19, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:01:54) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:01:54', 'Fulano de Tal', '2009-05-14 15:01:54')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 18ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:01:54) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:01:54', 'Fulano', '2009-05-14 15:01:54')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:01:54', 'Fulano', '2009-05-14 15:01:54')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:01:54', 'Fulano', '2009-05-14 15:01:54')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:01:54) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 13ms (View: 9, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:01:54) [GET]
+  Parameters: {"id"=>"id"}
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:01:54) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:02:56) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:02:56) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:02:56', 'Fulano de Tal', '2009-05-14 15:02:56')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:02:56) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.8ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:02:56', 'Fulano', '2009-05-14 15:02:56')[0m
+  [4;36;1mPessoa Create (0.4ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:02:57', 'Fulano', '2009-05-14 15:02:57')[0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:02:57', 'Fulano', '2009-05-14 15:02:57')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:02:57) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 13ms (View: 9, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:02:57) [GET]
+  Parameters: {"id"=>"id"}
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:02:57) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:04:10) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:04:10) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:04:10', 'Fulano de Tal', '2009-05-14 15:04:10')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:04:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:04:10', 'Fulano', '2009-05-14 15:04:10')[0m
+  [4;36;1mPessoa Create (0.4ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:04:10', 'Fulano', '2009-05-14 15:04:10')[0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:04:10', 'Fulano', '2009-05-14 15:04:10')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:04:10) [GET]
+  [4;36;1mPessoa Load (1.1ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 7, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:04:10) [GET]
+  Parameters: {"id"=>"id"}
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:04:10) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:04:41) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:04:41) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.7ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:04:41', 'Fulano de Tal', '2009-05-14 15:04:41')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:04:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:04:41', 'Fulano', '2009-05-14 15:04:41')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:04:41', 'Fulano', '2009-05-14 15:04:41')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:04:41', 'Fulano', '2009-05-14 15:04:41')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:04:41) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:04:42) [GET]
+  Parameters: {"id"=>"id"}
+  [4;35;1mPessoa Load (0.5ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:04:42) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:05:32) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:05:32) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:05:32', 'Fulano de Tal', '2009-05-14 15:05:32')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:05:32) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:05:32', 'Fulano', '2009-05-14 15:05:32')[0m
+  [4;36;1mPessoa Create (0.4ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:05:32', 'Fulano', '2009-05-14 15:05:32')[0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:05:32', 'Fulano', '2009-05-14 15:05:32')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:05:32) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:05:32) [GET]
+  Parameters: {"id"=>"id"}
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:05:32) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:06:01) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:06:01) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:06:01', 'Fulano de Tal', '2009-05-14 15:06:01')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:06:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:06:01', 'Fulano', '2009-05-14 15:06:01')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:06:01', 'Fulano', '2009-05-14 15:06:01')[0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:06:01', 'Fulano', '2009-05-14 15:06:01')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:06:01) [GET]
+  [4;36;1mPessoa Load (1.1ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 13ms (View: 8, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:06:02) [GET]
+  Parameters: {"id"=>"id"}
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:06:02) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:07:09) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 34ms (View: 26, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:07:09) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:07:09', 'Fulano de Tal', '2009-05-14 15:07:09')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:07:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:07:10', 'Fulano', '2009-05-14 15:07:10')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:07:10', 'Fulano', '2009-05-14 15:07:10')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:07:10', 'Fulano', '2009-05-14 15:07:10')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:07:10) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/id with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:07:10) [GET]
+  Parameters: {"id"=>"id"}
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 0) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:07:10) [GET]
+  Parameters: {"id"=>"id"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:08:05) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 29ms (View: 21, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:08:05) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:08:05', 'Fulano de Tal', '2009-05-14 15:08:05')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 18ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:08:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 7ms (View: 4, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:08:05', 'Fulano', '2009-05-14 15:08:05')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:08:05', 'Fulano', '2009-05-14 15:08:05')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:08:05', 'Fulano', '2009-05-14 15:08:05')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:08:05) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 13ms (View: 9, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.6ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:08:05) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:08:05) [GET]
+  Parameters: {"id"=>"1"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:09:25) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:09:26) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:09:26', 'Fulano de Tal', '2009-05-14 15:09:26')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:09:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:09:26', 'Fulano', '2009-05-14 15:09:26')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:09:26', 'Fulano', '2009-05-14 15:09:26')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:09:26', 'Fulano', '2009-05-14 15:09:26')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:09:26) [GET]
+  [4;36;1mPessoa Load (1.0ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.1ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:09:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.3ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:09:26) [GET]
+  Parameters: {"id"=>"1"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:10:42) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 35ms (View: 27, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:10:42) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:10:42', 'Fulano de Tal', '2009-05-14 15:10:42')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:10:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:10:42', 'Fulano', '2009-05-14 15:10:42')[0m
+  [4;36;1mPessoa Create (0.4ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:10:42', 'Fulano', '2009-05-14 15:10:42')[0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:10:42', 'Fulano', '2009-05-14 15:10:42')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:10:42) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 10ms (View: 7, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:10:42) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.3ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:10:42) [GET]
+  Parameters: {"id"=>"1"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:11:13) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:11:13) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:11:13', 'Fulano de Tal', '2009-05-14 15:11:13')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:11:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:11:13', 'Fulano', '2009-05-14 15:11:13')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:11:13', 'Fulano', '2009-05-14 15:11:13')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:11:13', 'Fulano', '2009-05-14 15:11:13')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:11:13) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 10ms (View: 7, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:11:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.5ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+
+
+Processing ApplicationController#show (for 127.0.0.1 at 2009-05-14 12:11:13) [GET]
+  Parameters: {"id"=>"1"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:12:19) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:12:19) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:12:19', 'Fulano de Tal', '2009-05-14 15:12:19')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:12:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:12:19', 'Fulano', '2009-05-14 15:12:19')[0m
+  [4;36;1mPessoa Create (0.4ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:12:19', 'Fulano', '2009-05-14 15:12:19')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:12:19', 'Fulano', '2009-05-14 15:12:19')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:12:19) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:12:19) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+
+
+Processing ApplicationController#edit (for 127.0.0.1 at 2009-05-14 12:12:19) [GET]
+  Parameters: {"id"=>"1"}
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:15:48) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:15:48) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:15:48', 'Fulano de Tal', '2009-05-14 15:15:48')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:15:48) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:15:48', 'Fulano', '2009-05-14 15:15:48')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:15:48', 'Fulano', '2009-05-14 15:15:48')[0m
+  [4;35;1mPessoa Create (0.2ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:15:48', 'Fulano', '2009-05-14 15:15:48')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:15:48) [GET]
+  [4;36;1mPessoa Load (1.2ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 13ms (View: 9, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:16:21) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:16:21) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:16:21', 'Fulano de Tal', '2009-05-14 15:16:21')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:16:21) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:16:21', 'Fulano', '2009-05-14 15:16:21')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:16:21', 'Fulano', '2009-05-14 15:16:21')[0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:16:21', 'Fulano', '2009-05-14 15:16:21')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:16:21) [GET]
+  [4;36;1mPessoa Load (4.0ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 14ms (View: 7, DB: 6) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:16:44) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:16:44) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:16:44', 'Fulano de Tal', '2009-05-14 15:16:44')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:16:44) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:16:44', 'Fulano', '2009-05-14 15:16:44')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:16:44', 'Fulano', '2009-05-14 15:16:44')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:16:44', 'Fulano', '2009-05-14 15:16:44')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:16:44) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.1ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:18:18) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:18:18) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:18:18', 'Fulano de Tal', '2009-05-14 15:18:18')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:18:18) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:18:18', 'Fulano', '2009-05-14 15:18:18')[0m
+  [4;36;1mPessoa Create (0.4ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:18:18', 'Fulano', '2009-05-14 15:18:18')[0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:18:18', 'Fulano', '2009-05-14 15:18:18')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:18:18) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 10ms (View: 7, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:18:52) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:18:52) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:18:52', 'Fulano de Tal', '2009-05-14 15:18:52')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:18:52) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:18:52', 'Fulano', '2009-05-14 15:18:52')[0m
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:18:52', 'Fulano', '2009-05-14 15:18:52')[0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:18:52', 'Fulano', '2009-05-14 15:18:52')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:18:52) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 10ms (View: 7, DB: 3) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:19:13) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:19:13) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:19:13', 'Fulano de Tal', '2009-05-14 15:19:13')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:19:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:19:13', 'Fulano', '2009-05-14 15:19:13')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:19:13', 'Fulano', '2009-05-14 15:19:13')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:19:13', 'Fulano', '2009-05-14 15:19:13')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:19:13) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.8ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:19:13', 'Fulano', '2009-05-14 15:19:13')[0m
+REQUESTING PAGE: GET pessoas/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:19:13) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 5ms (View: 2, DB: 3) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:20:01) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:20:01) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.7ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:20:01', 'Fulano de Tal', '2009-05-14 15:20:01')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:20:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:20:01', 'Fulano', '2009-05-14 15:20:01')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:20:01', 'Fulano', '2009-05-14 15:20:01')[0m
+  [4;35;1mPessoa Create (0.2ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:20:01', 'Fulano', '2009-05-14 15:20:01')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:20:01) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.1ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:20:01', 'Fulano', '2009-05-14 15:20:01')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:20:01) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 8ms (View: 6, DB: 3) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:21:10) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 25ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:21:10) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:21:10', 'Fulano de Tal', '2009-05-14 15:21:10')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:21:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:21:10', 'Fulano', '2009-05-14 15:21:10')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:21:10', 'Fulano', '2009-05-14 15:21:10')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:21:10', 'Fulano', '2009-05-14 15:21:10')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:21:10) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 7, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:21:10', 'Fulano', '2009-05-14 15:21:10')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:21:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 8ms (View: 6, DB: 3) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: POST /pessoas/1 with {"commit"=>"Salvar", "_method"=>"put", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/edit/1"}
+
+
+Processing PessoasController#update (for 127.0.0.1 at 2009-05-14 12:21:10) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mPessoa Update (0.3ms)[0m   [0;1mUPDATE "pessoas" SET "updated_at" = '2009-05-14 15:21:10', "nome" = 'Sicrano de Tal' WHERE "id" = 1[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 7ms (DB: 1) | 302 Found [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas/1"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:21:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:21:40) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 26ms (View: 18, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:21:41) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:21:41', 'Fulano de Tal', '2009-05-14 15:21:41')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:21:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:21:41', 'Fulano', '2009-05-14 15:21:41')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:21:41', 'Fulano', '2009-05-14 15:21:41')[0m
+  [4;35;1mPessoa Create (0.2ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:21:41', 'Fulano', '2009-05-14 15:21:41')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:21:41) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:21:41', 'Fulano', '2009-05-14 15:21:41')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:21:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 8ms (View: 6, DB: 3) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: POST /pessoas/1 with {"commit"=>"Salvar", "_method"=>"put", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/edit/1"}
+
+
+Processing PessoasController#update (for 127.0.0.1 at 2009-05-14 12:21:41) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mPessoa Update (0.3ms)[0m   [0;1mUPDATE "pessoas" SET "updated_at" = '2009-05-14 15:21:41', "nome" = 'Sicrano de Tal' WHERE "id" = 1[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 8ms (DB: 1) | 302 Found [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas/1"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:21:41) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:24:39) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 24ms (View: 16, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:24:39) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:24:39', 'Fulano de Tal', '2009-05-14 15:24:39')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:24:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.4ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:24:39', 'Fulano', '2009-05-14 15:24:39')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:24:39', 'Fulano', '2009-05-14 15:24:39')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:24:39', 'Fulano', '2009-05-14 15:24:39')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:24:39) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 7, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:24:39', 'Fulano', '2009-05-14 15:24:39')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:24:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 11ms (View: 8, DB: 3) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: POST /pessoas/1 with {"commit"=>"Salvar", "_method"=>"put", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/edit/1"}
+
+
+Processing PessoasController#update (for 127.0.0.1 at 2009-05-14 12:24:39) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}}
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mPessoa Update (0.4ms)[0m   [0;1mUPDATE "pessoas" SET "updated_at" = '2009-05-14 15:24:39', "nome" = 'Sicrano de Tal' WHERE "id" = 1[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 10ms (DB: 1) | 302 Found [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas/1"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:24:39) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET cidades/new with {} and HTTP headers {}
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2009-05-14 12:24:39) [GET]
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:25:40) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 24ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:25:40) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:25:40', 'Fulano de Tal', '2009-05-14 15:25:40')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 17ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:25:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 7ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:25:40', 'Fulano', '2009-05-14 15:25:40')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:25:40', 'Fulano', '2009-05-14 15:25:40')[0m
+  [4;35;1mPessoa Create (0.2ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:25:40', 'Fulano', '2009-05-14 15:25:40')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:25:40) [GET]
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.0ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:25:40', 'Fulano', '2009-05-14 15:25:40')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:25:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 9ms (View: 7, DB: 3) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: POST /pessoas/1 with {"commit"=>"Salvar", "_method"=>"put", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/edit/1"}
+
+
+Processing PessoasController#update (for 127.0.0.1 at 2009-05-14 12:25:40) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mPessoa Update (0.5ms)[0m   [0;1mUPDATE "pessoas" SET "updated_at" = '2009-05-14 15:25:40', "nome" = 'Sicrano de Tal' WHERE "id" = 1[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 9ms (DB: 1) | 302 Found [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas/1"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:25:40) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET cidades/new with {} and HTTP headers {}
+
+
+Processing CidadesController#new (for 127.0.0.1 at 2009-05-14 12:25:40) [GET]
+Rendering template within layouts/cidades
+Rendering cidades/new
+Completed in 16ms (View: 9, DB: 0) | 200 OK [http://www.example.com/cidades/new]
+  [4;36;1mCidade Load (0.3ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+  [4;35;1mCidade Load (0.3ms)[0m   [0mSELECT * FROM "cidades" [0m
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:26:09) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 51ms (View: 36, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:26:09) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (1.7ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:26:09', 'Fulano de Tal', '2009-05-14 15:26:09')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 38ms (DB: 2) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:26:09) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (1.3ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 14ms (View: 7, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.9ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:26:09', 'Fulano', '2009-05-14 15:26:09')[0m
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:26:09', 'Fulano', '2009-05-14 15:26:09')[0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:26:09', 'Fulano', '2009-05-14 15:26:09')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:26:09) [GET]
+  [4;36;1mPessoa Load (2.1ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 26ms (View: 18, DB: 5) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.7ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:26:10', 'Fulano', '2009-05-14 15:26:10')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:26:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 9ms (View: 6, DB: 4) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: POST /pessoas/1 with {"commit"=>"Salvar", "_method"=>"put", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/edit/1"}
+
+
+Processing PessoasController#update (for 127.0.0.1 at 2009-05-14 12:26:10) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}}
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mPessoa Update (0.4ms)[0m   [0;1mUPDATE "pessoas" SET "updated_at" = '2009-05-14 15:26:10', "nome" = 'Sicrano de Tal' WHERE "id" = 1[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 10ms (DB: 1) | 302 Found [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas/1"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:26:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET cidades/new with {} and HTTP headers {}
+
+
+Processing CidadesController#new (for 127.0.0.1 at 2009-05-14 12:26:10) [GET]
+Rendering template within layouts/cidades
+Rendering cidades/new
+Completed in 18ms (View: 9, DB: 0) | 200 OK [http://www.example.com/cidades/new]
+REQUESTING PAGE: POST /cidades with {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}} and HTTP headers {"HTTP_REFERER"=>"cidades/new"}
+
+
+Processing CidadesController#create (for 127.0.0.1 at 2009-05-14 12:26:10) [POST]
+  Parameters: {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}}
+  [4;36;1mCidade Create (0.5ms)[0m   [0;1mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:26:10', 'Iguatu', '2009-05-14 15:26:10', 'CE')[0m
+Redirected to http://www.example.com/cidades/1
+Completed in 6ms (DB: 1) | 302 Found [http://www.example.com/cidades]
+REQUESTING PAGE: GET http://www.example.com/cidades/1 with {} and HTTP headers {"HTTP_REFERER"=>"/cidades"}
+
+
+Processing CidadesController#show (for 127.0.0.1 at 2009-05-14 12:26:10) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCidade Load (0.6ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/cidades/1]
+  [4;36;1mCidade Load (0.4ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+  [4;35;1mCidade Load (0.4ms)[0m   [0mSELECT * FROM "cidades" [0m
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:27:02) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 24ms (View: 16, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:27:03) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:27:03', 'Fulano de Tal', '2009-05-14 15:27:03')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 18ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:27:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:27:03', 'Fulano', '2009-05-14 15:27:03')[0m
+  [4;36;1mPessoa Create (0.4ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:27:03', 'Fulano', '2009-05-14 15:27:03')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:27:03', 'Fulano', '2009-05-14 15:27:03')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:27:03) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 12ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.2ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (32.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:27:03', 'Fulano', '2009-05-14 15:27:03')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:27:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.8ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 10ms (View: 8, DB: 35) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: POST /pessoas/1 with {"commit"=>"Salvar", "_method"=>"put", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/edit/1"}
+
+
+Processing PessoasController#update (for 127.0.0.1 at 2009-05-14 12:27:03) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}}
+  [4;35;1mPessoa Load (0.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mPessoa Update (0.3ms)[0m   [0;1mUPDATE "pessoas" SET "updated_at" = '2009-05-14 15:27:03', "nome" = 'Sicrano de Tal' WHERE "id" = 1[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 8ms (DB: 1) | 302 Found [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas/1"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:27:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET cidades/new with {} and HTTP headers {}
+
+
+Processing CidadesController#new (for 127.0.0.1 at 2009-05-14 12:27:03) [GET]
+Rendering template within layouts/cidades
+Rendering cidades/new
+Completed in 18ms (View: 10, DB: 0) | 200 OK [http://www.example.com/cidades/new]
+REQUESTING PAGE: POST /cidades with {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}} and HTTP headers {"HTTP_REFERER"=>"cidades/new"}
+
+
+Processing CidadesController#create (for 127.0.0.1 at 2009-05-14 12:27:03) [POST]
+  Parameters: {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}}
+  [4;36;1mCidade Create (0.7ms)[0m   [0;1mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:27:03', 'Iguatu', '2009-05-14 15:27:03', 'CE')[0m
+Redirected to http://www.example.com/cidades/1
+Completed in 7ms (DB: 1) | 302 Found [http://www.example.com/cidades]
+REQUESTING PAGE: GET http://www.example.com/cidades/1 with {} and HTTP headers {"HTTP_REFERER"=>"/cidades"}
+
+
+Processing CidadesController#show (for 127.0.0.1 at 2009-05-14 12:27:03) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCidade Load (0.7ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/cidades/1]
+  [4;36;1mCidade Load (0.3ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+  [4;35;1mCidade Load (0.5ms)[0m   [0mSELECT * FROM "cidades" [0m
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:28:24) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 23ms (View: 16, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:28:24) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:28:24', 'Fulano de Tal', '2009-05-14 15:28:24')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 18ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:28:24) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.7ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:28:24', 'Fulano', '2009-05-14 15:28:24')[0m
+  [4;36;1mPessoa Create (0.2ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:28:24', 'Fulano', '2009-05-14 15:28:24')[0m
+  [4;35;1mPessoa Create (0.2ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:28:24', 'Fulano', '2009-05-14 15:28:24')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:28:24) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 7, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (0.9ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (39.0ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:28:24', 'Fulano', '2009-05-14 15:28:24')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:28:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 9ms (View: 6, DB: 41) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: POST /pessoas/1 with {"commit"=>"Salvar", "_method"=>"put", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/edit/1"}
+
+
+Processing PessoasController#update (for 127.0.0.1 at 2009-05-14 12:28:25) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mPessoa Update (0.5ms)[0m   [0;1mUPDATE "pessoas" SET "updated_at" = '2009-05-14 15:28:25', "nome" = 'Sicrano de Tal' WHERE "id" = 1[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 9ms (DB: 1) | 302 Found [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas/1"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:28:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET cidades/new with {} and HTTP headers {}
+
+
+Processing CidadesController#new (for 127.0.0.1 at 2009-05-14 12:28:25) [GET]
+Rendering template within layouts/cidades
+Rendering cidades/new
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://www.example.com/cidades/new]
+REQUESTING PAGE: POST /cidades with {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}} and HTTP headers {"HTTP_REFERER"=>"cidades/new"}
+
+
+Processing CidadesController#create (for 127.0.0.1 at 2009-05-14 12:28:25) [POST]
+  Parameters: {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}}
+  [4;36;1mCidade Create (0.5ms)[0m   [0;1mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:25', 'Iguatu', '2009-05-14 15:28:25', 'CE')[0m
+Redirected to http://www.example.com/cidades/1
+Completed in 6ms (DB: 1) | 302 Found [http://www.example.com/cidades]
+REQUESTING PAGE: GET http://www.example.com/cidades/1 with {} and HTTP headers {"HTTP_REFERER"=>"/cidades"}
+
+
+Processing CidadesController#show (for 127.0.0.1 at 2009-05-14 12:28:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCidade Load (0.6ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/cidades/1]
+  [4;36;1mCidade Load (0.3ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+  [4;35;1mCidade Create (0.5ms)[0m   [0mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:25', 'Cidade', '2009-05-14 15:28:25', 'UF')[0m
+  [4;36;1mCidade Create (0.3ms)[0m   [0;1mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:25', 'Cidade', '2009-05-14 15:28:25', 'UF')[0m
+  [4;35;1mCidade Create (0.3ms)[0m   [0mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:25', 'Cidade', '2009-05-14 15:28:25', 'UF')[0m
+REQUESTING PAGE: GET cidades with {} and HTTP headers {}
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2009-05-14 12:28:25) [GET]
+  [4;36;1mCidade Load (1.1ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+Rendering template within layouts/cidades
+Rendering cidades/index
+Completed in 17ms (View: 13, DB: 3) | 200 OK [http://www.example.com/cidades]
+  [4;35;1mCidade Load (0.8ms)[0m   [0mSELECT * FROM "cidades" [0m
+  [4;36;1mCidade Load (0.4ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+  [4;35;1mCidade Create (0.5ms)[0m   [0mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:25', 'Cidade', '2009-05-14 15:28:25', 'UF')[0m
+REQUESTING PAGE: GET cidades/edit/1 with {} and HTTP headers {}
+
+
+Processing CidadesController#edit (for 127.0.0.1 at 2009-05-14 12:28:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCidade Load (0.5ms)[0m   [0;1mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/edit
+Completed in 11ms (View: 6, DB: 2) | 200 OK [http://www.example.com/cidades/edit/1]
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 24ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:28:58) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.6ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:28:58', 'Fulano de Tal', '2009-05-14 15:28:58')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.3ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.5ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:28:58', 'Fulano', '2009-05-14 15:28:58')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:28:58', 'Fulano', '2009-05-14 15:28:58')[0m
+  [4;35;1mPessoa Create (0.3ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:28:58', 'Fulano', '2009-05-14 15:28:58')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.1ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.5ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (31.0ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:28:58', 'Fulano', '2009-05-14 15:28:58')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (0.6ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 8ms (View: 6, DB: 33) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: POST /pessoas/1 with {"commit"=>"Salvar", "_method"=>"put", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/edit/1"}
+
+
+Processing PessoasController#update (for 127.0.0.1 at 2009-05-14 12:28:58) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mPessoa Update (0.3ms)[0m   [0;1mUPDATE "pessoas" SET "updated_at" = '2009-05-14 15:28:58', "nome" = 'Sicrano de Tal' WHERE "id" = 1[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 8ms (DB: 1) | 302 Found [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas/1"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET cidades/new with {} and HTTP headers {}
+
+
+Processing CidadesController#new (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+Rendering template within layouts/cidades
+Rendering cidades/new
+Completed in 17ms (View: 9, DB: 0) | 200 OK [http://www.example.com/cidades/new]
+REQUESTING PAGE: POST /cidades with {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}} and HTTP headers {"HTTP_REFERER"=>"cidades/new"}
+
+
+Processing CidadesController#create (for 127.0.0.1 at 2009-05-14 12:28:58) [POST]
+  Parameters: {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}}
+  [4;36;1mCidade Create (0.5ms)[0m   [0;1mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:58', 'Iguatu', '2009-05-14 15:28:58', 'CE')[0m
+Redirected to http://www.example.com/cidades/1
+Completed in 6ms (DB: 1) | 302 Found [http://www.example.com/cidades]
+REQUESTING PAGE: GET http://www.example.com/cidades/1 with {} and HTTP headers {"HTTP_REFERER"=>"/cidades"}
+
+
+Processing CidadesController#show (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCidade Load (0.6ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/cidades/1]
+  [4;36;1mCidade Load (0.5ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+  [4;35;1mCidade Create (0.7ms)[0m   [0mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:58', 'Cidade', '2009-05-14 15:28:58', 'UF')[0m
+  [4;36;1mCidade Create (0.4ms)[0m   [0;1mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:58', 'Cidade', '2009-05-14 15:28:58', 'UF')[0m
+  [4;35;1mCidade Create (0.2ms)[0m   [0mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:58', 'Cidade', '2009-05-14 15:28:58', 'UF')[0m
+REQUESTING PAGE: GET cidades with {} and HTTP headers {}
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+  [4;36;1mCidade Load (0.8ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+Rendering template within layouts/cidades
+Rendering cidades/index
+Completed in 11ms (View: 8, DB: 3) | 200 OK [http://www.example.com/cidades]
+  [4;35;1mCidade Load (0.8ms)[0m   [0mSELECT * FROM "cidades" [0m
+  [4;36;1mCidade Load (0.3ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+  [4;35;1mCidade Create (0.5ms)[0m   [0mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:28:58', 'Cidade', '2009-05-14 15:28:58', 'UF')[0m
+REQUESTING PAGE: GET cidades/edit/1 with {} and HTTP headers {}
+
+
+Processing CidadesController#edit (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCidade Load (0.6ms)[0m   [0;1mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/edit
+Completed in 9ms (View: 7, DB: 2) | 200 OK [http://www.example.com/cidades/edit/1]
+REQUESTING PAGE: POST /cidades/1 with {"commit"=>"Salvar", "_method"=>"put", "cidade"=>{"nome"=>"Acopiara", "uf"=>"UF"}} and HTTP headers {"HTTP_REFERER"=>"cidades/edit/1"}
+
+
+Processing CidadesController#update (for 127.0.0.1 at 2009-05-14 12:28:58) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "cidade"=>{"nome"=>"Acopiara", "uf"=>"UF"}}
+  [4;35;1mCidade Load (0.7ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+  [4;36;1mCidade Update (0.3ms)[0m   [0;1mUPDATE "cidades" SET "updated_at" = '2009-05-14 15:28:58', "nome" = 'Acopiara' WHERE "id" = 1[0m
+Redirected to http://www.example.com/cidades/1
+Completed in 7ms (DB: 1) | 302 Found [http://www.example.com/cidades/1]
+REQUESTING PAGE: GET http://www.example.com/cidades/1 with {} and HTTP headers {"HTTP_REFERER"=>"/cidades/1"}
+
+
+Processing CidadesController#show (for 127.0.0.1 at 2009-05-14 12:28:58) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCidade Load (0.6ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/show
+Completed in 5ms (View: 2, DB: 1) | 200 OK [http://www.example.com/cidades/1]
+REQUESTING PAGE: GET pessoas/new with {} and HTTP headers {}
+
+
+Processing PessoasController#new (for 127.0.0.1 at 2009-05-14 12:29:25) [GET]
+Rendering template within layouts/pessoas
+Rendering pessoas/new
+Completed in 24ms (View: 17, DB: 0) | 200 OK [http://www.example.com/pessoas/new]
+REQUESTING PAGE: POST /pessoas with {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/new"}
+
+
+Processing PessoasController#create (for 127.0.0.1 at 2009-05-14 12:29:25) [POST]
+  Parameters: {"commit"=>"Salvar", "pessoa"=>{"endereco"=>"Rua Sicrano, 32", "nome"=>"Fulano de Tal"}}
+  [4;36;1mPessoa Create (0.5ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano, 32', '2009-05-14 15:29:25', 'Fulano de Tal', '2009-05-14 15:29:25')[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 16ms (DB: 1) | 302 Found [http://www.example.com/pessoas]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:29:25) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (0.6ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+  [4;36;1mPessoa Load (0.4ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (0.6ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:29:25', 'Fulano', '2009-05-14 15:29:25')[0m
+  [4;36;1mPessoa Create (0.3ms)[0m   [0;1mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:29:25', 'Fulano', '2009-05-14 15:29:25')[0m
+  [4;35;1mPessoa Create (0.2ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:29:25', 'Fulano', '2009-05-14 15:29:25')[0m
+REQUESTING PAGE: GET pessoas with {} and HTTP headers {}
+
+
+Processing PessoasController#index (for 127.0.0.1 at 2009-05-14 12:29:25) [GET]
+  [4;36;1mPessoa Load (0.9ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/index
+Completed in 12ms (View: 9, DB: 2) | 200 OK [http://www.example.com/pessoas]
+  [4;35;1mPessoa Load (1.8ms)[0m   [0mSELECT * FROM "pessoas" [0m
+  [4;36;1mPessoa Load (0.7ms)[0m   [0;1mSELECT * FROM "pessoas" [0m
+  [4;35;1mPessoa Create (74.8ms)[0m   [0mINSERT INTO "pessoas" ("endereco", "created_at", "nome", "updated_at") VALUES('Rua Sicrano', '2009-05-14 15:29:25', 'Fulano', '2009-05-14 15:29:25')[0m
+REQUESTING PAGE: GET pessoas/edit/1 with {} and HTTP headers {}
+
+
+Processing PessoasController#edit (for 127.0.0.1 at 2009-05-14 12:29:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mPessoa Load (1.2ms)[0m   [0;1mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/edit
+Completed in 18ms (View: 13, DB: 78) | 200 OK [http://www.example.com/pessoas/edit/1]
+REQUESTING PAGE: POST /pessoas/1 with {"commit"=>"Salvar", "_method"=>"put", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}} and HTTP headers {"HTTP_REFERER"=>"pessoas/edit/1"}
+
+
+Processing PessoasController#update (for 127.0.0.1 at 2009-05-14 12:29:26) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "pessoa"=>{"endereco"=>"Rua Sicrano", "nome"=>"Sicrano de Tal"}}
+  [4;35;1mPessoa Load (1.7ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+  [4;36;1mPessoa Update (1.0ms)[0m   [0;1mUPDATE "pessoas" SET "updated_at" = '2009-05-14 15:29:26', "nome" = 'Sicrano de Tal' WHERE "id" = 1[0m
+Redirected to http://www.example.com/pessoas/1
+Completed in 20ms (DB: 3) | 302 Found [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET http://www.example.com/pessoas/1 with {} and HTTP headers {"HTTP_REFERER"=>"/pessoas/1"}
+
+
+Processing PessoasController#show (for 127.0.0.1 at 2009-05-14 12:29:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mPessoa Load (1.2ms)[0m   [0mSELECT * FROM "pessoas" WHERE ("pessoas"."id" = 1) [0m
+Rendering template within layouts/pessoas
+Rendering pessoas/show
+Completed in 11ms (View: 5, DB: 1) | 200 OK [http://www.example.com/pessoas/1]
+REQUESTING PAGE: GET cidades/new with {} and HTTP headers {}
+
+
+Processing CidadesController#new (for 127.0.0.1 at 2009-05-14 12:29:26) [GET]
+Rendering template within layouts/cidades
+Rendering cidades/new
+Completed in 33ms (View: 17, DB: 0) | 200 OK [http://www.example.com/cidades/new]
+REQUESTING PAGE: POST /cidades with {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}} and HTTP headers {"HTTP_REFERER"=>"cidades/new"}
+
+
+Processing CidadesController#create (for 127.0.0.1 at 2009-05-14 12:29:26) [POST]
+  Parameters: {"commit"=>"Salvar", "cidade"=>{"nome"=>"Iguatu", "uf"=>"CE"}}
+  [4;36;1mCidade Create (1.1ms)[0m   [0;1mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:29:26', 'Iguatu', '2009-05-14 15:29:26', 'CE')[0m
+Redirected to http://www.example.com/cidades/1
+Completed in 13ms (DB: 1) | 302 Found [http://www.example.com/cidades]
+REQUESTING PAGE: GET http://www.example.com/cidades/1 with {} and HTTP headers {"HTTP_REFERER"=>"/cidades"}
+
+
+Processing CidadesController#show (for 127.0.0.1 at 2009-05-14 12:29:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCidade Load (1.1ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/show
+Completed in 12ms (View: 6, DB: 1) | 200 OK [http://www.example.com/cidades/1]
+  [4;36;1mCidade Load (0.3ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+  [4;35;1mCidade Create (0.5ms)[0m   [0mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:29:26', 'Cidade', '2009-05-14 15:29:26', 'UF')[0m
+  [4;36;1mCidade Create (0.2ms)[0m   [0;1mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:29:26', 'Cidade', '2009-05-14 15:29:26', 'UF')[0m
+  [4;35;1mCidade Create (0.2ms)[0m   [0mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:29:26', 'Cidade', '2009-05-14 15:29:26', 'UF')[0m
+REQUESTING PAGE: GET cidades with {} and HTTP headers {}
+
+
+Processing CidadesController#index (for 127.0.0.1 at 2009-05-14 12:29:26) [GET]
+  [4;36;1mCidade Load (0.8ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+Rendering template within layouts/cidades
+Rendering cidades/index
+Completed in 11ms (View: 8, DB: 2) | 200 OK [http://www.example.com/cidades]
+  [4;35;1mCidade Load (0.8ms)[0m   [0mSELECT * FROM "cidades" [0m
+  [4;36;1mCidade Load (0.3ms)[0m   [0;1mSELECT * FROM "cidades" [0m
+  [4;35;1mCidade Create (0.5ms)[0m   [0mINSERT INTO "cidades" ("created_at", "nome", "updated_at", "uf") VALUES('2009-05-14 15:29:26', 'Cidade', '2009-05-14 15:29:26', 'UF')[0m
+REQUESTING PAGE: GET cidades/edit/1 with {} and HTTP headers {}
+
+
+Processing CidadesController#edit (for 127.0.0.1 at 2009-05-14 12:29:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;36;1mCidade Load (0.6ms)[0m   [0;1mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/edit
+Completed in 8ms (View: 6, DB: 2) | 200 OK [http://www.example.com/cidades/edit/1]
+REQUESTING PAGE: POST /cidades/1 with {"commit"=>"Salvar", "_method"=>"put", "cidade"=>{"nome"=>"Acopiara", "uf"=>"UF"}} and HTTP headers {"HTTP_REFERER"=>"cidades/edit/1"}
+
+
+Processing CidadesController#update (for 127.0.0.1 at 2009-05-14 12:29:26) [PUT]
+  Parameters: {"commit"=>"Salvar", "id"=>"1", "cidade"=>{"nome"=>"Acopiara", "uf"=>"UF"}}
+  [4;35;1mCidade Load (0.7ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+  [4;36;1mCidade Update (0.3ms)[0m   [0;1mUPDATE "cidades" SET "updated_at" = '2009-05-14 15:29:26', "nome" = 'Acopiara' WHERE "id" = 1[0m
+Redirected to http://www.example.com/cidades/1
+Completed in 7ms (DB: 1) | 302 Found [http://www.example.com/cidades/1]
+REQUESTING PAGE: GET http://www.example.com/cidades/1 with {} and HTTP headers {"HTTP_REFERER"=>"/cidades/1"}
+
+
+Processing CidadesController#show (for 127.0.0.1 at 2009-05-14 12:29:26) [GET]
+  Parameters: {"id"=>"1"}
+  [4;35;1mCidade Load (0.6ms)[0m   [0mSELECT * FROM "cidades" WHERE ("cidades"."id" = 1) [0m
+Rendering template within layouts/cidades
+Rendering cidades/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/cidades/1]
